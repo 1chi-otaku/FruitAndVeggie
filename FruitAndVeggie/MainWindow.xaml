@@ -1,0 +1,44 @@
+﻿<Window x:Class="FruitAndVeggie.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FruitAndVeggie"
+        mc:Ignorable="d"
+        Title="Fruit and Veggies" Height="450" Width="800">
+
+    <Grid>
+        <DataGrid x:Name="datagrid" BorderBrush="#FF7290AD" Background="#FFD0D0D0" Margin="0,23,0,0"/>
+
+        <Menu VerticalAlignment="Top">
+            <MenuItem Header="Show">
+                <MenuItem Header="Show All" Click="MenuItemShowAll_Click"/>
+                <MenuItem Header="Show Names" Click="MenuItemShowNames_Click"/>
+                <MenuItem Header="Show Colour Statistics" Click="MenuItemShowColourStatistics_Click"/>
+                <MenuItem Header="Show Red or Yellow Veggies and Fruit" Click="MenuItemShowRedYellow_Click"/>
+            </MenuItem>
+
+            <MenuItem Header="Calories">
+                <MenuItem Header="Show Max Calorie" Click="MenuItemShowMaxCalorie_Click"/>
+                <MenuItem Header="Show Min Calorie" Click="MenuItemShowMinCalorie_Click"/>
+                <MenuItem Header="Show AVG Calorie" Click="MenuItemShowAvgCalorie_Click"/>
+            </MenuItem>
+
+            <MenuItem Header="Count">
+                <MenuItem Header="Show Fruit Amount" Click="MenuItemShowFruitAmount_Click"/>
+                <MenuItem Header="Show Veggie Amount" Click="MenuItemShowVeggieAmount_Click"/>
+                <MenuItem Header="Show Red Veggie and Fruit Amount" Click="MenuItemShowRedAmount_Click"/>
+            </MenuItem>
+
+            <MenuItem Header="Calories Settings">
+                <MenuItem Header="Show with lower calorie content indicated" Click="MenuItemShowLowerCalorie_Click"/>
+                <MenuItem Header="Show with higher calorie content indicated" Click="MenuItemShowHigherCalorie_Click"/>
+                <MenuItem Header="Show within calorie range" Click="MenuItemShowWithinCalorieRange_Click"/>
+            </MenuItem>
+        </Menu>
+
+        
+    </Grid>
+    
+
+</Window>
